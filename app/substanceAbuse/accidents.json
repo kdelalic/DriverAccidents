@@ -1,0 +1,385 @@
+{
+  "name": "# of crashes",
+  "children": [
+    {
+      "name": "Injury due to crash",
+      "children": [
+        {
+          "name": "Fatal Injury",
+          "children": [
+            {
+              "name": "Took Drug Test",
+              "children": [
+                {
+                  "name": "Tested Positive",
+                  "children": [
+                    {
+                      "name": "Male",
+                      "size": 0
+                    },
+                    {
+                      "name": "Female",
+                      "size": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "Tested Negative",
+                  "children": [
+                    {
+                      "name": "Male",
+                      "size": 0
+                    },
+                    {
+                      "name": "Female",
+                      "size": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Took Alcohol Test",
+              "children": [
+                {
+                  "name": "BAC greater than legal limit (>0.08)",
+                  "children": [
+                    {
+                      "name": "Male",
+                      "size": 0
+                    },
+                    {
+                      "name": "Female",
+                      "size": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "BAC less than legal limit (<0.08)",
+                  "children": [
+                    {
+                      "name": "Male",
+                      "size": 0
+                    },
+                    {
+                      "name": "Female",
+                      "size": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Did not take drug Test",
+              "size": 0
+            },
+            {
+              "name": "Did not take alcohol Test",
+              "size": 0
+            }
+          ]
+        },
+        {
+          "name": "Incapacitating injury",
+          "children": [
+            {
+              "name": "Took Drug Test",
+              "children": [
+                {
+                  "name": "Tested Positive",
+                  "children": [
+                    {
+                      "name": "Male",
+                      "size": 0
+                    },
+                    {
+                      "name": "Female",
+                      "size": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "Tested Negative",
+                  "children": [
+                    {
+                      "name": "Male",
+                      "size": 0
+                    },
+                    {
+                      "name": "Female",
+                      "size": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Took Alcohol Test",
+              "children": [
+                {
+                  "name": "BAC greater than legal limit (>0.08)",
+                  "children": [
+                    {
+                      "name": "Male",
+                      "size": 0
+                    },
+                    {
+                      "name": "Female",
+                      "size": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "BAC less than legal limit (<0.08)",
+                  "children": [
+                    {
+                      "name": "Male",
+                      "size": 0
+                    },
+                    {
+                      "name": "Female",
+                      "size": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Did not take drug Test",
+              "size": 0
+            },
+            {
+              "name": "Did not take alcohol Test",
+              "size": 0
+            }
+          ]
+        },
+        {
+          "name": "Non-incapacitating injury",
+          "children": [
+            {
+              "name": "Took Drug Test",
+              "children": [
+                {
+                  "name": "Tested Positive",
+                  "children": [
+                    {
+                      "name": "Male",
+                      "size": 0
+                    },
+                    {
+                      "name": "Female",
+                      "size": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "Tested Negative",
+                  "children": [
+                    {
+                      "name": "Male",
+                      "size": 0
+                    },
+                    {
+                      "name": "Female",
+                      "size": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Took Alcohol Test",
+              "children": [
+                {
+                  "name": "BAC greater than legal limit (>0.08)",
+                  "children": [
+                    {
+                      "name": "Male",
+                      "size": 0
+                    },
+                    {
+                      "name": "Female",
+                      "size": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "BAC less than legal limit (<0.08)",
+                  "children": [
+                    {
+                      "name": "Male",
+                      "size": 0
+                    },
+                    {
+                      "name": "Female",
+                      "size": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Did not take drug Test",
+              "size": 0
+            },
+            {
+              "name": "Did not take alcohol Test",
+              "size": 0
+            }
+          ]
+        },
+        {
+          "name": "Possible injury",
+          "children": [
+            {
+              "name": "Took Drug Test",
+              "children": [
+                {
+                  "name": "Tested Positive",
+                  "children": [
+                    {
+                      "name": "Male",
+                      "size": 0
+                    },
+                    {
+                      "name": "Female",
+                      "size": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "Tested Negative",
+                  "children": [
+                    {
+                      "name": "Male",
+                      "size": 0
+                    },
+                    {
+                      "name": "Female",
+                      "size": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Took Alcohol Test",
+              "children": [
+                {
+                  "name": "BAC greater than legal limit (>0.08)",
+                  "children": [
+                    {
+                      "name": "Male",
+                      "size": 0
+                    },
+                    {
+                      "name": "Female",
+                      "size": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "BAC less than legal limit (<0.08)",
+                  "children": [
+                    {
+                      "name": "Male",
+                      "size": 0
+                    },
+                    {
+                      "name": "Female",
+                      "size": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Did not take drug Test",
+              "size": 0
+            },
+            {
+              "name": "Did not take alcohol Test",
+              "size": 0
+            }
+          ]
+        },
+        {
+          "name": "No injury",
+          "children": [
+            {
+              "name": "Took Drug Test",
+              "children": [
+                {
+                  "name": "Tested Positive",
+                  "children": [
+                    {
+                      "name": "Male",
+                      "size": 0
+                    },
+                    {
+                      "name": "Female",
+                      "size": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "Tested Negative",
+                  "children": [
+                    {
+                      "name": "Male",
+                      "size": 0
+                    },
+                    {
+                      "name": "Female",
+                      "size": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Took Alcohol Test",
+              "children": [
+                {
+                  "name": "BAC greater than legal limit (>0.08)",
+                  "children": [
+                    {
+                      "name": "Male",
+                      "size": 0
+                    },
+                    {
+                      "name": "Female",
+                      "size": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "BAC less than legal limit (<0.08)",
+                  "children": [
+                    {
+                      "name": "Male",
+                      "size": 0
+                    },
+                    {
+                      "name": "Female",
+                      "size": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Did not take drug Test",
+              "size": 0
+            },
+            {
+              "name": "Did not take alcohol Test",
+              "size": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
