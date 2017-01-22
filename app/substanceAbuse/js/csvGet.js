@@ -44,208 +44,185 @@ $(document).ready(function() {
 			drv_drug_test_rslt: d.drv_drug_test_rslt //drug test results
 		};
 	}, function(data) {
-		function search()
-		{
-			url = "accidents.json";
-			
-			var xhr = new XMLHttpRequest();
-			xhr.open('GET', url);
-			
-			xhr.onreadystatechange = function()
-			{
-				if(xhr.readyState == XMLHttpRequest.DONE)
-				{
-					searchSuccess(xhr.responseText);
-				}
-			}
-			xhr.send(null);
-		}
-
-		function searchSuccess(response)
-		{
-			var json = JSON.parse(response);
-		
-		
+		var count = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 		for (i = 0; i < data.length; i++) {
 			if (data[i].drv_injy_svty_cd == "1") {
 				if (data[i].drv_alch_feld_test_ind == "1") {
 					if (+data[i].drv_alch_test_rslt > 0.08) {
 						if (data[i].drv_gndr_cd == "M") {
-							json["children"][0]["children"][0]["children"][1]["children"][0]["children"][0]["size"]++;
+							count[0]++;
 						} else if (data[i].drv_gndr_cd == "F") {
-							json["children"][0]["children"][0]["children"][1]["children"][0]["children"][1]["size"]++;
+							count[1]++;
 						}
 					} else {
 						if (data[i].drv_gndr_cd == "M") {
-							json["children"][0]["children"][0]["children"][1]["children"][1]["children"][0]["size"]++;
+							count[2]++;
 						} else if (data[i].drv_gndr_cd == "f") {
-							json["children"][0]["children"][0]["children"][1]["children"][1]["children"][1]["size"]++;
+							count[3]++;
 						}
 					}
 				} else if (data[i].drv_alch_feld_test_ind == "0") {
-					json["children"][0]["children"][0]["children"][3]["size"]++;
+					count[4]++;
 				}
 				if (data[i].drv_drug_blod_test_ind == "1" | data[i].drv_drug_urne_test_ind == "1") {
 					if (+data[i].drv_drug_test_rslt > 0) {
 						if (data[i].drv_gndr_cd == "M") {
-							json["children"][0]["children"][0]["children"][0]["children"][0]["children"][0]["size"]++;
+							count[5]++;
 						} else if (data[i].drv_gndr_cd == "F") {
-							json["children"][0]["children"][0]["children"][0]["children"][0]["children"][1]["size"]++;
+							count[6]++;
 						}
 					} else {
 						if (data[i].drv_gndr_cd == "M") {
-							json["children"][0]["children"][0]["children"][0]["children"][1]["children"][0]["size"]++;
+							count[7]++;
 						} else if (data[i].drv_gndr_cd == "F") {
-							json["children"][0]["children"][0]["children"][0]["children"][1]["children"][1]["size"]++;
+							count[8]++;
 						}
 					}
 				} else {
-					json["children"][0]["children"][0]["children"][2]["size"]++;
+					count[9]++;
 				}
 			} else if (data[i].drv_injy_svty_cd == "2") {
 				if (data[i].drv_alch_feld_test_ind == "1") {
 					if (+data[i].drv_alch_test_rslt > 0.08) {
 						if (data[i].drv_gndr_cd == "M") {
-							json["children"][0]["children"][1]["children"][1]["children"][0]["children"][0]["size"]++;
+							count[10]++;
 						} else if (data[i].drv_gndr_cd == "F") {
-							json["children"][0]["children"][1]["children"][1]["children"][0]["children"][1]["size"]++;
+							count[11]++;
 						}
 					} else {
 						if (data[i].drv_gndr_cd == "M") {
-							json["children"][0]["children"][1]["children"][1]["children"][1]["children"][0]["size"]++;
+							count[12]++;
 						} else if (data[i].drv_gndr_cd == "f") {
-							json["children"][0]["children"][1]["children"][1]["children"][1]["children"][1]["size"]++;
+							count[13]++;
 						}
 					}
 				} else if (data[i].drv_alch_feld_test_ind == "0") {
-					json["children"][0]["children"][0]["children"][3]["size"]++;
+					count[14]++;
 				}
 				if (data[i].drv_drug_blod_test_ind == "1" | data[i].drv_drug_urne_test_ind == "1") {
 					if (+data[i].drv_drug_test_rslt > 0) {
 						if (data[i].drv_gndr_cd == "M") {
-							json["children"][0]["children"][1]["children"][0]["children"][0]["children"][0]["size"]++;
+							count[15]++;
 						} else if (data[i].drv_gndr_cd == "F") {
-							json["children"][0]["children"][1]["children"][0]["children"][0]["children"][1]["size"]++;
+							count[16]++;
 						}
 					} else {
 						if (data[i].drv_gndr_cd == "M") {
-							json["children"][0]["children"][1]["children"][0]["children"][1]["children"][0]["size"]++;
+							count[17]++;
 						} else if (data[i].drv_gndr_cd == "F") {
-							json["children"][0]["children"][1]["children"][0]["children"][1]["children"][1]["size"]++;
+							count[18]++;
 						}
 					}
 				} else {
-					json["children"][0]["children"][1]["children"][2]["size"]++;
+					count[19]++;
 				}
 			} else if (data[i].drv_injy_svty_cd == "3") {
 				if (data[i].drv_alch_feld_test_ind == "1") {
 					if (+data[i].drv_alch_test_rslt > 0.08) {
 						if (data[i].drv_gndr_cd == "M") {
-							json["children"][0]["children"][2]["children"][1]["children"][0]["children"][0]["size"]++;
+							count[20]++;
 						} else if (data[i].drv_gndr_cd == "F") {
-							json["children"][0]["children"][2]["children"][1]["children"][0]["children"][1]["size"]++;
+							count[21]++;
 						}
 					} else {
 						if (data[i].drv_gndr_cd == "M") {
-							json["children"][0]["children"][2]["children"][1]["children"][1]["children"][0]["size"]++;
+							count[22]++;
 						} else if (data[i].drv_gndr_cd == "f") {
-							json["children"][0]["children"][2]["children"][1]["children"][1]["children"][1]["size"]++;
+							count[23]++;
 						}
 					}
 				} else if (data[i].drv_alch_feld_test_ind == "0") {
-					json["children"][0]["children"][2]["children"][3]["size"]++;
+					count[24]++;
 				}
 				if (data[i].drv_drug_blod_test_ind == "1" | data[i].drv_drug_urne_test_ind == "1") {
 					if (+data[i].drv_drug_test_rslt > 0) {
 						if (data[i].drv_gndr_cd == "M") {
-							json["children"][0]["children"][2]["children"][0]["children"][0]["children"][0]["size"]++;
+							count[25]++;
 						} else if (data[i].drv_gndr_cd == "F") {
-							json["children"][0]["children"][2]["children"][0]["children"][0]["children"][1]["size"]++;
+							count[26]++;
 						}
 					} else {
 						if (data[i].drv_gndr_cd == "M") {
-							json["children"][0]["children"][2]["children"][0]["children"][1]["children"][0]["size"]++;
+							count[27]++;
 						} else if (data[i].drv_gndr_cd == "F") {
-							json["children"][0]["children"][2]["children"][0]["children"][1]["children"][1]["size"]++;
+							count[28]++;
 						}
 					}
 				} else {
-					json["children"][0]["children"][2]["children"][2]["size"]++;
+					count[29]++;
 				}
 			} else if (data[i].drv_injy_svty_cd == "4") {
 				if (data[i].drv_alch_feld_test_ind == "1") {
 					if (+data[i].drv_alch_test_rslt > 0.08) {
 						if (data[i].drv_gndr_cd == "M") {
-							json["children"][0]["children"][3]["children"][1]["children"][0]["children"][0]["size"]++;
+							count[30]++;
 						} else if (data[i].drv_gndr_cd == "F") {
-							json["children"][0]["children"][3]["children"][1]["children"][0]["children"][1]["size"]++;
+							count[31]++;
 						}
 					} else {
 						if (data[i].drv_gndr_cd == "M") {
-							json["children"][0]["children"][3]["children"][1]["children"][1]["children"][0]["size"]++;
+							count[32]++;
 						} else if (data[i].drv_gndr_cd == "f") {
-							json["children"][0]["children"][3]["children"][1]["children"][1]["children"][1]["size"]++;
+							count[33]++;
 						}
 					}
 				} else if (data[i].drv_alch_feld_test_ind == "0") {
-					json["children"][0]["children"][3]["children"][3]["size"]++;
+					count[34]++;
 				}
 				if (data[i].drv_drug_blod_test_ind == "1" | data[i].drv_drug_urne_test_ind == "1") {
 					if (+data[i].drv_drug_test_rslt > 0) {
 						if (data[i].drv_gndr_cd == "M") {
-							json["children"][0]["children"][3]["children"][0]["children"][0]["children"][0]["size"]++;
+							count[35]++;
 						} else if (data[i].drv_gndr_cd == "F") {
-							json["children"][0]["children"][3]["children"][0]["children"][0]["children"][1]["size"]++;
+							count[36]++;
 						}
 					} else {
 						if (data[i].drv_gndr_cd == "M") {
-							json["children"][0]["children"][3]["children"][0]["children"][1]["children"][0]["size"]++;
+							count[37]++;
 						} else if (data[i].drv_gndr_cd == "F") {
-							json["children"][0]["children"][3]["children"][0]["children"][1]["children"][1]["size"]++;
+							count[38]++;
 						}
 					}
 				} else {
-					json["children"][0]["children"][3]["children"][2]["size"]++;
+					count[39]++;
 				}
 			} else if (data[i].drv_injy_svty_cd == "5") {
 				if (data[i].drv_alch_feld_test_ind == "1") {
 					if (+data[i].drv_alch_test_rslt > 0.08) {
 						if (data[i].drv_gndr_cd == "M") {
-							json["children"][0]["children"][4]["children"][1]["children"][0]["children"][0]["size"]++;
+							count[40]++;
 						} else if (data[i].drv_gndr_cd == "F") {
-							json["children"][0]["children"][4]["children"][1]["children"][0]["children"][1]["size"]++;
+							count[41]++;
 						}
 					} else {
 						if (data[i].drv_gndr_cd == "M") {
-							json["children"][0]["children"][4]["children"][1]["children"][1]["children"][0]["size"]++;
+							count[42]++;
 						} else if (data[i].drv_gndr_cd == "f") {
-							json["children"][0]["children"][4]["children"][1]["children"][1]["children"][1]["size"]++;
+							count[43]++;
 						}
 					}
 				} else if (data[i].drv_alch_feld_test_ind == "0") {
-					json["children"][0]["children"][4]["children"][3]["size"]++;
+					count[44]++;
 				}
 				if (data[i].drv_drug_blod_test_ind == "1" | data[i].drv_drug_urne_test_ind == "1") {
 					if (+data[i].drv_drug_test_rslt > 0) {
 						if (data[i].drv_gndr_cd == "M") {
-							json["children"][0]["children"][4]["children"][0]["children"][0]["children"][0]["size"]++;
+							count[45]++;
 						} else if (data[i].drv_gndr_cd == "F") {
-							json["children"][0]["children"][4]["children"][0]["children"][0]["children"][1]["size"]++;
+							count[46]++;
 						}
 					} else {
 						if (data[i].drv_gndr_cd == "M") {
-							json["children"][0]["children"][4]["children"][0]["children"][1]["children"][0]["size"]++;
+							count[47]++;
 						} else if (data[i].drv_gndr_cd == "F") {
-							json["children"][0]["children"][4]["children"][0]["children"][1]["children"][1]["size"]++;
+							count[48]++;
 						}
 					}
 				} else {
-					json["children"][0]["children"][4]["children"][2]["size"]++;
+					count[49]++;
 				}
 			}
 		}
-	}
-	search();
-
-	});
+		console.log(count);
+	})
 });
